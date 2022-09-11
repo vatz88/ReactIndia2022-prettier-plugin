@@ -1,10 +1,31 @@
-const languages = [];
+const parser = require('./src/parser');
+const printer = require('./src/printer');
 
-const parsers = {};
+const languages = [
+  {
+    name: 'rql',
+    extensions: ['.rql'],
+    parsers: ['rql-parse'],
+  },
+];
 
-const printers = {};
+const parsers = {
+  'rql-parse': {
+    parse: parser,
+    astFormat: 'rql-ast',
+  },
+};
 
-const defaultOptions = {};
+const printers = {
+  'rql-ast': {
+    print: printer,
+  },
+};
+
+const defaultOptions = {
+  // useTabs: true,
+  // tabWidth: 4,
+};
 
 module.exports = {
   languages,

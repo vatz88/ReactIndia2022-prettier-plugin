@@ -12,6 +12,17 @@ npm install
 
 ## Commits
 
+- Initial setup
+
+```sh
+git checkout 168079a296adfe70136fd9fc3fa96039d3da51ec
+```
+
+- Working repl without formatting
+
+```sh
+git checkout 168079a296adfe70136fd9fc3fa96039d3da51ec
+```
 
 ## Command
 
