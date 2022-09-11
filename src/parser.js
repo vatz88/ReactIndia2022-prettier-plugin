@@ -4,8 +4,8 @@ module.exports = function parser(rqlString) {
     .substring(1, rqlString.length - 1)
     .split(',')
     .map((el) => ({
-      type: 'element',
-      value: el,
+      type: 'ELEMENT',
+      value: el.trim(),
     }));
 
   return {
