@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.scss" />
+    <script type="module" src="./script.mjs"></script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <label for="rql-string">RQL</label>
+      </div>
+      <textarea
+        placeholder="rql query"
+        id="rql-string"
+        name="rql-string"
+        rows="5"
+        cols="100"
+      >
+SELECT(LmsEnrolment, [role.full_name, start_date, status], '62d5f8fc3c02b45a1478d5b3')</textarea
+      >
+    </div>
+
+    <div><button id="btn-formatRql">Format</button></div>
+    <br />
+
+    <div>
+      <div>Formatted RQL</div>
+      <pre id="formatted-rql"></pre>
+    </div>
+  </body>
+</html>

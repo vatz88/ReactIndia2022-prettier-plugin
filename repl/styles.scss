@@ -1,0 +1,58 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 24px;
+}
+
+textarea {
+  margin: 1em 0;
+}
+
+pre {
+  line-height: 1.3;
+}
+
+#formatted-rql,
+#tokenized-rql,
+#ast-rql,
+#formatted-rql {
+  border: 1px solid rgb(118, 118, 118);
+  padding: 4px;
+  width: 750px;
+  height: 300px;
+  // max-height: 300px;
+  font-size: 14px;
+  overflow: scroll;
+}
+
+.flexbox {
+  display: flex;
+  margin: 16px;
+  &.direction-column {
+    flex-direction: column;
+  }
+  > .flex-item {
+    flex: 1;
+    &.no-grow {
+      flex-grow: 0;
+    }
+  }
+}
+
+/**
+* Syntax highlighting
+*/
+
+.FUNCTION {
+  color: #5485b6;
+}
+
+.VARIABLE {
+  color: #7272ca;
+}
+
+.CONSTANT {
+  color: #bd5187;
+}

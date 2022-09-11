@@ -1,0 +1,1 @@
+SELECT(lmsEnrollment, [role.full_name, start_date, status], '62d5f8fc3c02b45a1478d5b3')
