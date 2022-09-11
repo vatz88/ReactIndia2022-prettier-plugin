@@ -1,3 +1,3 @@
 module.exports = function printer(path, options, print) {
-  return path.getValue();
+  return JSON.stringify(path.getValue());
 };
