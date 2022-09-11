@@ -20,12 +20,22 @@
         rows="5"
         cols="100"
       >
-[role, start_date, status, key1, key2, key3, key4, key5]</textarea
+SELECT(LmsEnrolment, [role.full_name, start_date, status], '62d5f8fc3c02b45a1478d5b3')</textarea
       >
     </div>
 
     <div><button id="btn-formatRql">Format</button></div>
     <br />
+
+    <div>
+      <div>Tokenized RQL</div>
+      <pre id="tokenized-rql"></pre>
+    </div>
+
+    <div>
+      <div>RQL AST</div>
+      <pre id="ast-rql"></pre>
+    </div>
 
     <div>
       <div>Formatted RQL</div>
