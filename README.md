@@ -15,13 +15,25 @@ npm install
 - Initial setup
 
 ```sh
-git checkout 168079a296adfe70136fd9fc3fa96039d3da51ec
+git checkout bacec81760e39b9051623448b432655bc30a4f20
 ```
 
-- Working repl without formatting
+- Parser
 
 ```sh
-git checkout 168079a296adfe70136fd9fc3fa96039d3da51ec
+git checkout 34c19fa44fa77f7aeb4820293e762ad9bc247eeb
+```
+
+- Printer function
+
+```sh
+git checkout 241ce2f1b34a3a8bdaf41c28671389c6e8232dbc
+```
+
+- RQL function
+
+```sh
+git checkout main
 ```
 
 ## Command
